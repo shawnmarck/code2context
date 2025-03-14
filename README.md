@@ -68,10 +68,13 @@ useState(...); useEffect(...);
 - **Adjust Summarization**: Modify summarize_frontend() keywords.
 - **Exclusions**: Add to exclude_patterns.
 
-## Token Optimization
-- Frontend summarized to focus on logic, reducing tokens by ~70-80%.
-- Skips small files (via min_file_size).
-- Typical output: ~20K tokens (vs. ~50K+ without summarization).
+## Token Efficiency
+ - **Reduction**: Summarizes frontend code and skips small files, reducing token count significantly vs. a flat file dump.
+ - **Examples**:
+    - **SamplePythonApp**: Original 225K chars (50K–70K tokens) reduced to 70K chars (15K–20K tokens), a ~65–70% reduction.
+    - **Generic** App: A 500K char codebase (125K tokens flat) can shrink to ~150K chars (35K–40K tokens), a ~68–72% reduction.
+- Fits within LLM context windows (e.g., Claude 3’s 200K tokens) with room for prompts.
+
 
 ## Contributing
 1. Fork the repo.
