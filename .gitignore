@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+context_config.json
+
+# AI / editor artifacts
+.cursor/
+.claude/
+agent-transcripts/
+*.canvas
+
+# Tool output
+app_context.txt
+*.context.txt

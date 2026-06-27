@@ -9,7 +9,7 @@ A Python utility to generate a compact, LLM-friendly context file from your app'
 - **Compact Output**: Uses `=== filepath ===` delimiters, optimized for LLMs.
 
 ## Installation
-1. Clone: `git clone https://github.com/yourusername/code2context.git && cd code2context`
+1. Clone: `git clone https://github.com/shawnmarck/code2context.git && cd code2context`
 2. Install: `pip install -r requirements.txt` (none beyond Python stdlib currently).
 
 ## Usage

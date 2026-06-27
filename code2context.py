@@ -7,7 +7,10 @@ from datetime import datetime
 DEFAULT_CONFIG = {
     "output_file": "app_context.txt",
     "include_dirs": ["./src", "./app"],
-    "exclude_patterns": ["node_modules", "__pycache__", ".git", "venv", ".next", "build", "dist"],
+    "exclude_patterns": [
+        "node_modules", "__pycache__", ".git", "venv", ".next", "build", "dist",
+        ".cursor", ".claude", "agent-transcripts", ".env", "credentials",
+    ],
     "include_extensions": [".py", ".js", ".ts", ".tsx", ".java", ".cpp", ".c", ".cs"],
     "summarize_frontend": True,
     "frontend_extensions": [".tsx", ".jsx", ".vue"],
